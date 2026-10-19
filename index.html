@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>야나기가우라 고등학교 | 한국어 안내</title>
+<meta name="description" content="일본 오이타현 우사시에 위치한 사립 야나기가우라 고등학교(柳ヶ浦高等学校)의 한국어 안내 페이지. 글로벌 스터디즈 코스(유학생 코스), 간호학과, 톱 애슬리트 코스 소개.">
+<meta property="og:title" content="야나기가우라 고등학교 | 한국어 안내">
+<meta property="og:description" content="1910년 개교, 일본 오이타현의 사립 고등학교. 유학생을 위한 글로벌 스터디즈 코스 운영.">
+<meta property="og:image" content="images/campus.jpg">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="images/emblem.png">
+<link rel="alternate" hreflang="ja" href="https://yanagigaura.ed.jp/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14275c; --navy-2:#1d3a86; --gold:#c9a24a; --sky:#e8f1fb;
+  --ink:#1b2333; --muted:#5b6578; --line:#e3e8f0; --bg:#ffffff; --soft:#f6f8fc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;word-break:keep-all}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:42px;height:42px}
+.brand b{display:block;font-size:17px;color:var(--navy);line-height:1.2}
+.brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:.04em}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-size:15px;font-weight:500}
+nav a:hover{color:var(--navy-2)}
+.lang{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:4px 12px;text-decoration:none;color:var(--muted);margin-left:18px}
+.menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--navy)}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(90deg,#f3f8fe 0%,#f3f8fe 35%,rgba(243,248,254,0) 60%),url(images/campus.jpg) right center/cover no-repeat;min-height:520px;display:flex;align-items:center}
+.hero .wrap{width:100%}
+.hero-text{max-width:540px;padding:60px 0}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.12em;margin-bottom:14px}
+.hero h1{font-size:44px;line-height:1.3;margin:0 0 18px;color:var(--navy);font-weight:900}
+.hero p{font-size:17px;color:#34405a;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+.btn-p{background:var(--navy);color:#fff}
+.btn-p:hover{background:var(--navy-2)}
+.btn-o{border:1.5px solid var(--navy);color:var(--navy);background:#fff}
+
+/* stats */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.stat{padding:30px 10px;border-right:1px solid rgba(255,255,255,.15)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:34px;font-weight:900;color:var(--gold);line-height:1.2}
+.stat span{font-size:14px;opacity:.85}
+
+/* sections */
+section{padding:90px 0}
+section.alt{background:var(--soft)}
+.sec-head{text-align:center;margin-bottom:48px}
+.sec-head small{display:block;color:var(--gold);font-weight:700;letter-spacing:.16em;font-size:13px;margin-bottom:8px}
+.sec-head h2{font-size:32px;margin:0;color:var(--navy);font-weight:900}
+.sec-head p{color:var(--muted);max-width:720px;margin:14px auto 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about blockquote{margin:0;font-size:22px;font-weight:700;color:var(--navy);line-height:1.6;border-left:4px solid var(--gold);padding-left:20px}
+.about p{color:#3a4558}
+
+/* course cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;position:relative;overflow:hidden}
+.card .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--navy-2);background:var(--sky);padding:3px 10px;border-radius:6px}
+.card h3{font-size:22px;margin:12px 0 2px;color:var(--navy)}
+.card .en{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.card .lead{font-weight:700;margin:14px 0 8px}
+.card ul{margin:0;padding-left:18px;color:#3a4558;font-size:15px}
+.card li{margin:4px 0}
+.card.feature{border:2px solid var(--gold)}
+.card.feature::after{content:"유학생 추천";position:absolute;top:18px;right:-34px;background:var(--gold);color:#fff;font-size:12px;font-weight:700;padding:4px 40px;transform:rotate(35deg)}
+
+/* global */
+.plan{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:48px}
+.step{background:#fff;border-radius:14px;padding:24px 20px;border-top:4px solid var(--navy-2);box-shadow:0 2px 10px rgba(20,39,92,.06)}
+.step b{display:block;color:var(--navy-2);font-size:14px;margin-bottom:6px}
+.step h4{margin:0 0 6px;font-size:17px}
+.step p{margin:0;font-size:14px;color:var(--muted)}
+.step.goal{background:var(--navy);color:#fff;border-top-color:var(--gold)}
+.step.goal b{color:var(--gold)}
+.step.goal p{color:#cfd7ea}
+.g-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.box{background:#fff;border-radius:14px;padding:28px;border:1px solid var(--line)}
+.box h4{margin:0 0 14px;color:var(--navy);font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:14px;background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:999px}
+.sister{list-style:none;margin:0;padding:0;font-size:15px}
+.sister li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.sister li:last-child{border-bottom:0}
+.sister em{font-style:normal;font-weight:700;color:var(--navy-2);margin-right:8px}
+.kr{background:#fff8e6;border-radius:6px;padding:0 4px}
+.msg{margin-top:24px;background:#fff;border-radius:14px;padding:28px;border-left:4px solid var(--gold);color:#3a4558}
+.msg b{display:block;color:var(--navy);margin-bottom:6px}
+
+/* highlight */
+.highlight{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.highlight img{border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.highlight h3{font-size:26px;color:var(--navy);margin:0 0 12px}
+.highlight ul{padding-left:18px;color:#3a4558}
+
+/* access */
+.access{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.times{width:100%;border-collapse:collapse;font-size:15px}
+.times td{padding:10px 4px;border-bottom:1px solid var(--line)}
+.times td:last-child{text-align:right;font-weight:700;color:var(--navy)}
+.times tr.h td{font-weight:700;color:var(--gold);border-bottom:2px solid var(--gold);padding-top:18px}
+
+/* contact */
+.contact{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .sec-head p{color:#cfd7ea}
+.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto}
+.c-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:24px}
+.c-item small{display:block;opacity:.75;font-size:13px}
+.c-item a,.c-item span{font-size:17px;font-weight:700;text-decoration:none;color:#fff;word-break:break-all}
+.contact .note{margin-top:22px;font-size:13px;opacity:.75}
+
+footer{background:#0d1a3d;color:#9aa6c4;font-size:13px;padding:36px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{color:#fff}
+footer a{color:#cfd7ea}
+
+@media (max-width:860px){
+  nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line)}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:8px 20px 16px}
+  nav li a{display:block;padding:10px 0}
+  .menu-btn{display:block}
+  .lang{display:none}
+  .hero{background:linear-gradient(180deg,rgba(243,248,254,.92),rgba(243,248,254,.92)),url(images/campus.jpg) center/cover;min-height:auto}
+  .hero h1{font-size:32px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:0}
+  .about,.cards,.g-grid,.highlight,.access,.c-grid{grid-template-columns:1fr}
+  .plan{grid-template-columns:1fr 1fr}
+  section{padding:64px 0}
+  .sec-head h2{font-size:26px}
+  .wrap{padding:0 16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <img src="images/emblem.png" alt="야나기가우라 고등학교 교표">
+      <span><b>야나기가우라 고등학교</b><small>YANAGIGAURA HIGH SCHOOL · 柳ヶ浦高等学校</small></span>
+    </a>
+    <div style="display:flex;align-items:center">
+      <nav id="nav"><ul>
+        <li><a href="#about">학교 소개</a></li>
+        <li><a href="#courses">학과·코스</a></li>
+        <li><a href="#global">유학생 코스</a></li>
+        <li><a href="#access">오시는 길</a></li>
+        <li><a href="#contact">문의</a></li>
+      </ul></nav>
+      <a class="lang" href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">日本語</a>
+      <button class="menu-btn" aria-label="메뉴" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="eyebrow">SINCE 1910 · 일본 오이타현 우사시</span>
+        <h1>야나기가우라에서 키운 자신감이,<br>당신의 꿈을 열어갑니다.</h1>
+        <p>개교 110년이 넘는 전통의 사립 고등학교. 학업과 스포츠, 그리고 세계 각국에서 온 유학생이 함께 성장하는 곳입니다.</p>
+        <div class="btns">
+          <a class="btn btn-p" href="#global">유학생 코스 보기</a>
+          <a class="btn btn-o" href="#contact">입학 문의</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>1910</b><span>개교 연도</span></div>
+      <div class="stat"><b>11회</b><span>고시엔 대회 출전</span></div>
+      <div class="stat"><b>15개국+</b><span>유학생 출신 국가·지역</span></div>
+      <div class="stat"><b>100%</b><span>간호학과 졸업 후 취업률</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head"><small>ABOUT OUR SCHOOL</small><h2>학교 소개</h2></div>
+      <div class="about">
+        <blockquote>“학생 한 사람 한 사람의<br>꿈을 열어가는 학교”</blockquote>
+        <div>
+          <p>오이타현 우사 평야 한가운데에 자리한 야나기가우라 고등학교는 고시엔(전국고교야구대회) 11회 출전이라는 기록이 보여주듯, “학생 한 사람 한 사람의 꿈을 열어간다”는 목표 아래 모든 교직원이 하나가 되어 학생들을 지원하고 있습니다.</p>
+          <p>학생들이 타고난 개성과 능력을 충분히 키우고, 21세기 국제 사회에서 활약할 수 있는 자질과 풍부한 인간성을 갖추도록 돕는 것이 본교의 교육 목표입니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="alt">
+    <div class="wrap">
+      <div class="sec-head"><small>COURSE OFFERINGS</small><h2>학과·코스</h2>
+        <p>보통과(톱 애슬리트 · 글로벌 스터디즈 · 커리어 디자인)와 간호학과를 운영합니다. 스포츠, 국제 무대, 진로 탐색, 의료 전문직 등 각자의 목표에 맞는 전문적인 학습이 가능합니다.</p></div>
+      <div class="cards">
+        <div class="card feature">
+          <span class="tag">보통과</span>
+          <h3>글로벌 스터디즈 코스</h3><div class="en">Global Studies Course</div>
+          <p class="lead">해외 유학생·귀국 자녀를 위한 코스</p>
+          <ul>
+            <li>일본어 교원 4명 배치, 수준 높은 일본어 교육</li>
+            <li>일본어능력시험(JLPT) N1 취득 및 일본 대학 진학 목표</li>
+            <li>이문화 이해·체험 학습으로 일본 문화·전통 이해</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">보통과</span>
+          <h3>톱 애슬리트 코스</h3><div class="en">Top Athlete Course</div>
+          <p class="lead">세계에서 활약하는 운동선수 육성</p>
+          <ul>
+            <li>기력·지력·체력이 조화를 이룬 인간 형성</li>
+            <li>스포츠 Ⅰ·Ⅱ·Ⅲ, 스포츠 개론 등 독자 커리큘럼</li>
+            <li>현 내 최대 규모의 야구·축구 전용 그라운드</li>
+            <li>경식야구 / 남녀 축구 / 남자 농구 / 유도 / 검도 / 육상</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">보통과</span>
+          <h3>커리어 디자인 코스</h3><div class="en">Career Design Course</div>
+          <p class="lead">사회에서 활약할 비즈니스 스킬 습득</p>
+          <ul>
+            <li>종합탐구·정보·상업 계열 등 실천적인 교육</li>
+            <li>학생 개개인의 개성에 맞춘 지도</li>
+            <li>취업은 물론 대학·전문학교 진학 등 다양한 진로 실현</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">간호학과</span>
+          <h3>간호학과 (기초과정·전문과정)</h3><div class="en">Nursing Department</div>
+          <p class="lead">5년 일관 교육으로 최단 20세에 간호사로</p>
+          <ul>
+            <li>간호사 국가시험 수험 자격을 5년 만에 취득</li>
+            <li>조산사·보건사 학교 수험 자격도 20세에 취득</li>
+            <li>제휴 병원의 장학금 대여 제도</li>
+            <li>1학년부터 병원 실습 · 졸업 후 취업률 100%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="global">
+    <div class="wrap">
+      <div class="sec-head"><small>FOR INTERNATIONAL STUDENTS</small><h2>글로벌 스터디즈 코스</h2>
+        <p>일본어 수업 주 8시간, 이문화 이해 수업 주 1시간. 종이접기·꽃꽂이·서예 등을 통해 일본 문화를 깊이 이해하고, 실천적인 일본어 능력과 글로벌한 시야를 갖춘 국제인을 육성합니다.</p></div>
+
+      <div class="plan">
+        <div class="step"><b>1학년</b><h4>일본어 집중 학습</h4><p>일본어 학습 + 일본어로 배우는 교과 수업</p></div>
+        <div class="step"><b>2학년</b><h4>JLPT N2 취득</h4><p>일본어로 배우는 교과 수업 + N2 취득 목표</p></div>
+        <div class="step"><b>3학년</b><h4>입시 대비</h4><p>입시 대책·EJU(일본유학시험) + N1 취득 목표</p></div>
+        <div class="step goal"><b>GOAL</b><h4>EJU + N1 → 일본 명문대 진학</h4><p>3년간 JLPT·EJU 시험 대비를 꾸준히 진행합니다.</p></div>
+      </div>
+
+      <div class="g-grid">
+        <div class="box">
+          <h4>유학생 출신 국가·지역</h4>
+          <div class="chips">
+            <span class="kr">🇰🇷 한국</span><span>중국</span><span>대만</span><span>홍콩</span><span>몽골</span><span>베트남</span><span>태국</span><span>필리핀</span><span>인도네시아</span><span>네팔</span><span>방글라데시</span><span>카자흐스탄</span><span>아프가니스탄</span><span>감비아</span><span>세네갈</span>
+          </div>
+        </div>
+        <div class="box">
+          <h4>자매학교</h4>
+          <ul class="sister">
+            <li><em>대한민국</em><span class="kr">경주여자정보고등학교</span></li>
+            <li><em>대한민국</em><span class="kr">학교법인 중암학원 (대경문화예술고등학교·대경대학교)</span></li>
+            <li><em>캄보디아</em>BELTEI International School</li>
+            <li><em>중국</em>쑤저우시 타오우 고급중학</li>
+            <li><em>몽골</em>Erdemiin San School · Dalaivan School · New Era International School · Selenge Province 1st School</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="msg">
+        <b>일본어 교원 마쓰야 가오루 선생님의 메시지</b>
+        일본과 해외에서 쌓은 일본어 지도 경험을 살려 본교에서 일본어를 가르치고 있습니다. 세계 각국의 학생 여러분을 기다립니다. 본교 코스에서 함께 배우며 높은 일본어 실력과 함께 다음 세대로 날아오릅시다! 본 코스의 재학생은 유학생과 귀국 자녀이며, 일본인 학생과의 교류는 동아리 활동과 기숙사 생활이 중심이 됩니다. 언어뿐 아니라 문화와 가치관의 차이를 알고 서로 공생하는 힘을 길러 봅시다.
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap highlight">
+      <img src="images/winners.jpg" alt="제34회 전일본고등학교 여자축구선수권대회 우승" loading="lazy">
+      <div>
+        <small style="color:var(--gold);font-weight:700;letter-spacing:.14em">HIGHLIGHTS</small>
+        <h3>스포츠 명문의 자부심</h3>
+        <ul>
+          <li>2026년 1월, 제34회 전일본고등학교 여자축구선수권대회 첫 우승</li>
+          <li>여자축구부 인터하이 3위 입상, U-17 여자 월드컵 출전 선수 배출</li>
+          <li>고시엔(전국고교야구대회) 통산 11회 출전</li>
+          <li>현 내 최대 규모의 야구·축구 전용 그라운드 보유</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="access">
+    <div class="wrap">
+      <div class="sec-head"><small>ACCESS</small><h2>오시는 길</h2>
+        <p>〒872-0032 일본 오이타현 우사시 오아자 에스카 939 (大分県宇佐市大字江須賀939)</p></div>
+      <div class="access">
+        <table class="times">
+          <tr class="h"><td colspan="2">특급열차</td></tr>
+          <tr><td>나카쓰역</td><td>11분</td></tr>
+          <tr><td>벳푸역</td><td>36분</td></tr>
+          <tr><td>오이타역</td><td>44분</td></tr>
+          <tr><td>고쿠라역</td><td>46분</td></tr>
+          <tr><td>하카타역(후쿠오카)</td><td>90분</td></tr>
+          <tr class="h"><td colspan="2">자동차</td></tr>
+          <tr><td>오이타 공항</td><td>60분</td></tr>
+          <tr><td>기타큐슈 공항</td><td>60분</td></tr>
+          <tr><td>후쿠오카 공항</td><td>100분</td></tr>
+        </table>
+        <div class="box"><h4>주소</h4><p style="margin:0 0 16px">〒872-0032<br>大分県宇佐市大字江須賀939</p><a class="btn btn-o" href="https://maps.google.com/?q=%E6%9F%B3%E3%83%B6%E6%B5%A6%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1" target="_blank" rel="noopener">Google 지도에서 보기</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="sec-head"><small>CONTACT</small><h2>입학·자료 문의</h2>
+        <p>학교 안내 자료 요청, 입학 상담, 단기 유학 문의를 받고 있습니다.</p></div>
+      <div class="c-grid">
+        <div class="c-item"><small>전화 (일본)</small><a href="tel:+81978380033">+81-978-38-0033</a></div>
+        <div class="c-item"><small>이메일</small><a href="mailto:jimushitu@yanagigaura.ed.jp">jimushitu@yanagigaura.ed.jp</a></div>
+        <div class="c-item"><small>공식 홈페이지 (일본어)</small><a href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">yanagigaura.ed.jp</a></div>
+      </div>
+      <p class="note">학교 응대 시간: 일본 시간 평일 09:00–16:00 (토·일·공휴일 휴무)</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>학교법인 요시모치학원 야나기가우라 고등학교</b><br>〒872-0032 大分県宇佐市大字江須賀939 · TEL +81-978-38-0033 · FAX +81-978-38-5828</div>
+    <div>본 페이지는 한국어 안내용입니다. 최신·공식 정보는 <a href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">yanagigaura.ed.jp</a>를 확인해 주세요.<br>© Yoshimochi Gakuen Yanagigaura High School</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+</script>
+</body>
+</html>
