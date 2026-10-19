@@ -122,11 +122,13 @@ section.alt{background:var(--soft)}
 .contact{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center}
 .contact h2{color:#fff}
 .contact .sec-head p{color:#cfd7ea}
-.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto}
+.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:960px;margin:0 auto}
 .c-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:24px}
 .c-item small{display:block;opacity:.75;font-size:13px}
-.c-item a,.c-item span{font-size:17px;font-weight:700;text-decoration:none;color:#fff;word-break:break-all}
-.contact .note{margin-top:22px;font-size:13px;opacity:.75}
+.c-item a,.c-item span{font-size:16px;font-weight:700;text-decoration:none;color:#fff;overflow-wrap:anywhere}
+.contact .note{margin:16px 0 0;font-size:13px;opacity:.75}
+.c-label{font-size:16px;margin:40px 0 16px;color:var(--gold)}
+.c-label:first-of-type{margin-top:0}
 
 footer{background:#0d1a3d;color:#9aa6c4;font-size:13px;padding:36px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
@@ -183,7 +185,7 @@ footer a{color:#cfd7ea}
         <p>개교 110년이 넘는 전통의 사립 고등학교. 학업과 스포츠, 그리고 세계 각국에서 온 유학생이 함께 성장하는 곳입니다.</p>
         <div class="btns">
           <a class="btn btn-p" href="#global">유학생 코스 보기</a>
-          <a class="btn btn-o" href="#contact">입학 문의</a>
+          <a class="btn btn-o" href="#contact">한국어 입학 문의</a>
         </div>
       </div>
     </div>
@@ -342,10 +344,18 @@ footer a{color:#cfd7ea}
     <div class="wrap">
       <div class="sec-head"><small>CONTACT</small><h2>입학·자료 문의</h2>
         <p>학교 안내 자료 요청, 입학 상담, 단기 유학 문의를 받고 있습니다.</p></div>
+      <h3 class="c-label">한국 문의 · 공식 제휴사 터치더월드</h3>
+      <div class="c-grid">
+        <div class="c-item"><small>전화 (한국)</small><a href="tel:18008078">1800-8078</a></div>
+        <div class="c-item"><small>이메일</small><a href="mailto:pjjttw@naver.com">pjjttw@naver.com</a></div>
+        <div class="c-item"><small>제휴사 홈페이지</small><a href="https://www.touchtheworld.co.kr" target="_blank" rel="noopener">touchtheworld.co.kr</a></div>
+      </div>
+      <p class="note">한국어 상담은 제휴사 터치더월드(Touch The World)에서 안내해 드립니다.</p>
+      <h3 class="c-label">학교 직접 문의 (일본어)</h3>
       <div class="c-grid">
         <div class="c-item"><small>전화 (일본)</small><a href="tel:+81978380033">+81-978-38-0033</a></div>
         <div class="c-item"><small>이메일</small><a href="mailto:jimushitu@yanagigaura.ed.jp">jimushitu@yanagigaura.ed.jp</a></div>
-        <div class="c-item"><small>공식 홈페이지 (일본어)</small><a href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">yanagigaura.ed.jp</a></div>
+        <div class="c-item"><small>공식 홈페이지</small><a href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">yanagigaura.ed.jp</a></div>
       </div>
       <p class="note">학교 응대 시간: 일본 시간 평일 09:00–16:00 (토·일·공휴일 휴무)</p>
     </div>
@@ -355,7 +365,7 @@ footer a{color:#cfd7ea}
 <footer>
   <div class="wrap">
     <div><b>학교법인 요시모치학원 야나기가우라 고등학교</b><br>〒872-0032 大分県宇佐市大字江須賀939 · TEL +81-978-38-0033 · FAX +81-978-38-5828</div>
-    <div>본 페이지는 한국어 안내용입니다. 최신·공식 정보는 <a href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">yanagigaura.ed.jp</a>를 확인해 주세요.<br>© Yoshimochi Gakuen Yanagigaura High School</div>
+    <div>본 페이지는 한국어 안내용입니다. 최신·공식 정보는 <a href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">yanagigaura.ed.jp</a>를 확인해 주세요.<br>한국 공식 제휴사: <a href="https://www.touchtheworld.co.kr" target="_blank" rel="noopener">터치더월드(Touch The World)</a> · 1800-8078<br>© Yoshimochi Gakuen Yanagigaura High School</div>
   </div>
 </footer>
 
