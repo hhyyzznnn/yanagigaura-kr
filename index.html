@@ -7,168 +7,33 @@
 <meta name="description" content="일본 오이타현 우사시에 위치한 사립 야나기가우라 고등학교(柳ヶ浦高等学校)의 한국어 안내 페이지. 글로벌 스터디즈 코스(유학생 코스), 간호학과, 톱 애슬리트 코스 소개.">
 <meta property="og:title" content="야나기가우라 고등학교 | 한국어 안내">
 <meta property="og:description" content="1910년 개교, 일본 오이타현의 사립 고등학교. 유학생을 위한 글로벌 스터디즈 코스 운영.">
-<meta property="og:image" content="images/campus.jpg">
+<meta property="og:image" content="https://www.yanagigaura.co.kr/images/campus.jpg">
 <meta property="og:locale" content="ko_KR">
-<link rel="icon" href="images/emblem.png">
+<link rel="icon" href="/images/emblem.png">
 <link rel="alternate" hreflang="ja" href="https://yanagigaura.ed.jp/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --navy:#14275c; --navy-2:#1d3a86; --gold:#c9a24a; --sky:#e8f1fb;
-  --ink:#1b2333; --muted:#5b6578; --line:#e3e8f0; --bg:#ffffff; --soft:#f6f8fc;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;word-break:keep-all}
-img{max-width:100%;display:block}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-
-/* header */
-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.brand img{width:42px;height:42px}
-.brand b{display:block;font-size:17px;color:var(--navy);line-height:1.2}
-.brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:.04em}
-nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
-nav a{text-decoration:none;font-size:15px;font-weight:500}
-nav a:hover{color:var(--navy-2)}
-.lang{font-size:13px;border:1px solid var(--line);border-radius:20px;padding:4px 12px;text-decoration:none;color:var(--muted);margin-left:18px}
-.menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--navy)}
-
-/* hero */
-.hero{position:relative;background:linear-gradient(90deg,#f3f8fe 0%,#f3f8fe 35%,rgba(243,248,254,0) 60%),url(images/campus.jpg) right center/cover no-repeat;min-height:520px;display:flex;align-items:center}
-.hero .wrap{width:100%}
-.hero-text{max-width:540px;padding:60px 0}
-.eyebrow{display:inline-block;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.12em;margin-bottom:14px}
-.hero h1{font-size:44px;line-height:1.3;margin:0 0 18px;color:var(--navy);font-weight:900}
-.hero p{font-size:17px;color:#34405a;margin:0 0 28px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
-.btn-p{background:var(--navy);color:#fff}
-.btn-p:hover{background:var(--navy-2)}
-.btn-o{border:1.5px solid var(--navy);color:var(--navy);background:#fff}
-
-/* stats */
-.stats{background:var(--navy);color:#fff}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
-.stat{padding:30px 10px;border-right:1px solid rgba(255,255,255,.15)}
-.stat:last-child{border-right:0}
-.stat b{display:block;font-size:34px;font-weight:900;color:var(--gold);line-height:1.2}
-.stat span{font-size:14px;opacity:.85}
-
-/* sections */
-section{padding:90px 0}
-section.alt{background:var(--soft)}
-.sec-head{text-align:center;margin-bottom:48px}
-.sec-head small{display:block;color:var(--gold);font-weight:700;letter-spacing:.16em;font-size:13px;margin-bottom:8px}
-.sec-head h2{font-size:32px;margin:0;color:var(--navy);font-weight:900}
-.sec-head p{color:var(--muted);max-width:720px;margin:14px auto 0}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about blockquote{margin:0;font-size:22px;font-weight:700;color:var(--navy);line-height:1.6;border-left:4px solid var(--gold);padding-left:20px}
-.about p{color:#3a4558}
-
-/* course cards */
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;position:relative;overflow:hidden}
-.card .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--navy-2);background:var(--sky);padding:3px 10px;border-radius:6px}
-.card h3{font-size:22px;margin:12px 0 2px;color:var(--navy)}
-.card .en{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
-.card .lead{font-weight:700;margin:14px 0 8px}
-.card ul{margin:0;padding-left:18px;color:#3a4558;font-size:15px}
-.card li{margin:4px 0}
-.card.feature{border:2px solid var(--gold)}
-.card.feature::after{content:"유학생 추천";position:absolute;top:18px;right:-34px;background:var(--gold);color:#fff;font-size:12px;font-weight:700;padding:4px 40px;transform:rotate(35deg)}
-
-/* global */
-.plan{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:48px}
-.step{background:#fff;border-radius:14px;padding:24px 20px;border-top:4px solid var(--navy-2);box-shadow:0 2px 10px rgba(20,39,92,.06)}
-.step b{display:block;color:var(--navy-2);font-size:14px;margin-bottom:6px}
-.step h4{margin:0 0 6px;font-size:17px}
-.step p{margin:0;font-size:14px;color:var(--muted)}
-.step.goal{background:var(--navy);color:#fff;border-top-color:var(--gold)}
-.step.goal b{color:var(--gold)}
-.step.goal p{color:#cfd7ea}
-.g-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.box{background:#fff;border-radius:14px;padding:28px;border:1px solid var(--line)}
-.box h4{margin:0 0 14px;color:var(--navy);font-size:18px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips span{font-size:14px;background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:999px}
-.sister{list-style:none;margin:0;padding:0;font-size:15px}
-.sister li{padding:8px 0;border-bottom:1px dashed var(--line)}
-.sister li:last-child{border-bottom:0}
-.sister em{font-style:normal;font-weight:700;color:var(--navy-2);margin-right:8px}
-.kr{background:#fff8e6;border-radius:6px;padding:0 4px}
-.msg{margin-top:24px;background:#fff;border-radius:14px;padding:28px;border-left:4px solid var(--gold);color:#3a4558}
-.msg b{display:block;color:var(--navy);margin-bottom:6px}
-
-/* highlight */
-.highlight{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
-.highlight img{border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
-.highlight h3{font-size:26px;color:var(--navy);margin:0 0 12px}
-.highlight ul{padding-left:18px;color:#3a4558}
-
-/* access */
-.access{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.times{width:100%;border-collapse:collapse;font-size:15px}
-.times td{padding:10px 4px;border-bottom:1px solid var(--line)}
-.times td:last-child{text-align:right;font-weight:700;color:var(--navy)}
-.times tr.h td{font-weight:700;color:var(--gold);border-bottom:2px solid var(--gold);padding-top:18px}
-
-/* contact */
-.contact{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center}
-.contact h2{color:#fff}
-.contact .sec-head p{color:#cfd7ea}
-.c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:960px;margin:0 auto}
-.c-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:24px}
-.c-item small{display:block;opacity:.75;font-size:13px}
-.c-item a,.c-item span{font-size:16px;font-weight:700;text-decoration:none;color:#fff;overflow-wrap:anywhere}
-.contact .note{margin:16px 0 0;font-size:13px;opacity:.75}
-.c-label{font-size:16px;margin:40px 0 16px;color:var(--gold)}
-.c-label:first-of-type{margin-top:0}
-
-footer{background:#0d1a3d;color:#9aa6c4;font-size:13px;padding:36px 0}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer b{color:#fff}
-footer a{color:#cfd7ea}
-
-@media (max-width:860px){
-  nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line)}
-  nav.open{display:block}
-  nav ul{flex-direction:column;gap:0;padding:8px 20px 16px}
-  nav li a{display:block;padding:10px 0}
-  .menu-btn{display:block}
-  .lang{display:none}
-  .hero{background:linear-gradient(180deg,rgba(243,248,254,.92),rgba(243,248,254,.92)),url(images/campus.jpg) center/cover;min-height:auto}
-  .hero h1{font-size:32px}
-  .stats .wrap{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:0}
-  .about,.cards,.g-grid,.highlight,.access,.c-grid{grid-template-columns:1fr}
-  .plan{grid-template-columns:1fr 1fr}
-  section{padding:64px 0}
-  .sec-head h2{font-size:26px}
-  .wrap{padding:0 16px}
-}
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#top">
-      <img src="images/emblem.png" alt="야나기가우라 고등학교 교표">
+    <a class="brand" href="/">
+      <img src="/images/emblem.png" alt="야나기가우라 고등학교 교표">
       <span><b>야나기가우라 고등학교</b><small>YANAGIGAURA HIGH SCHOOL · 柳ヶ浦高等学校</small></span>
     </a>
     <div style="display:flex;align-items:center">
       <nav id="nav"><ul>
-        <li><a href="#about">학교 소개</a></li>
-        <li><a href="#courses">학과·코스</a></li>
-        <li><a href="#global">유학생 코스</a></li>
-        <li><a href="#access">오시는 길</a></li>
-        <li><a href="#contact">문의</a></li>
+        <li><a href="/" class="on">홈</a></li>
+        <li><a href="/global/">유학생 코스</a></li>
+        <li><a href="/facilities/">시설</a></li>
+        <li><a href="/dormitory/">기숙사</a></li>
+        <li><a href="/admission/">입시 요강</a></li>
+        <li><a href="/scholarship/">학비·장학금</a></li>
+        <li><a href="/careers/">진로</a></li>
+        <li><a href="/#contact">문의</a></li>
       </ul></nav>
       <a class="lang" href="https://yanagigaura.ed.jp/" target="_blank" rel="noopener">日本語</a>
       <button class="menu-btn" aria-label="메뉴" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
@@ -227,6 +92,7 @@ footer a{color:#cfd7ea}
             <li>일본어능력시험(JLPT) N1 취득 및 일본 대학 진학 목표</li>
             <li>이문화 이해·체험 학습으로 일본 문화·전통 이해</li>
           </ul>
+          <a class="card-link" href="/global/">코스 자세히 보기 →</a>
         </div>
         <div class="card">
           <span class="tag">보통과</span>
@@ -304,7 +170,7 @@ footer a{color:#cfd7ea}
 
   <section class="alt">
     <div class="wrap highlight">
-      <img src="images/winners.jpg" alt="제34회 전일본고등학교 여자축구선수권대회 우승" loading="lazy">
+      <img src="/images/winners.jpg" alt="제34회 전일본고등학교 여자축구선수권대회 우승" loading="lazy">
       <div>
         <small style="color:var(--gold);font-weight:700;letter-spacing:.14em">HIGHLIGHTS</small>
         <h3>스포츠 명문의 자부심</h3>
@@ -318,7 +184,21 @@ footer a{color:#cfd7ea}
     </div>
   </section>
 
-  <section id="access">
+  <section id="more">
+    <div class="wrap">
+      <div class="sec-head"><small>MORE INFO</small><h2>더 알아보기</h2></div>
+      <div class="links">
+        <a class="link-card" href="/global/"><b>글로벌 스터디즈 코스</b><span>유학생 코스 상세, 3년 계획, 자매학교</span></a>
+        <a class="link-card" href="/facilities/"><b>시설 안내</b><span>캠퍼스, 간호동, 야구장·축구장</span></a>
+        <a class="link-card" href="/dormitory/"><b>기숙사 생활</b><span>기숙사 5동, 식사, 월 기숙사비</span></a>
+        <a class="link-card" href="/admission/"><b>입시 요강</b><span>2027학년도 일정, 유학생 특별입시</span></a>
+        <a class="link-card" href="/scholarship/"><b>학비·장학금</b><span>입학금, 월 학비, 장학 제도</span></a>
+        <a class="link-card" href="/careers/"><b>졸업 후 진로</b><span>진학 대학, 간호학과 취업률 100%</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="alt">
     <div class="wrap">
       <div class="sec-head"><small>ACCESS</small><h2>오시는 길</h2>
         <p>〒872-0032 일본 오이타현 우사시 오아자 에스카 939 (大分県宇佐市大字江須賀939)</p></div>
